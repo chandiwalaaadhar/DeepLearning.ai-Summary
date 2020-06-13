@@ -589,7 +589,11 @@ Implications of L2-regularization on:
   - Plateau is a region where the derivative is close to zero for a long time.
   - This is where algorithms like momentum, RMSprop or Adam can help.
 
+**How do you choose $\beta$?**
 
+- The larger the momentum $\beta$ is, the smoother the update because the more we take the past gradients into account. But if $\beta$ is too big, it could also smooth out the updates too much. 
+- Common values for $\beta$ range from 0.8 to 0.999. If you don't feel inclined to tune this, $\beta = 0.9$ is often a reasonable default. 
+- Tuning the optimal $\beta$ for your model might need trying several values to see what works best in term of reducing the value of the cost function $J$. 
 
 ## Hyperparameter tuning, Batch Normalization and Programming Frameworks
 
