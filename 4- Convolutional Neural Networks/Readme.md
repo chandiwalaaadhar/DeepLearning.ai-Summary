@@ -110,6 +110,7 @@ Here is the course summary as given on the course [link](https://www.coursera.or
   - If you make the convolution operation in TensorFlow you will find the function `tf.nn.conv2d`. In keras you will find `Conv2d` function.
   - The vertical edge detection filter will find a `3x3` place in an image where there are a bright region followed by a dark region.
   - If we applied this filter to a white region followed by a dark region, it should find the edges in between the two colors as a positive value. But if we applied the same filter to a dark region followed by a white region it will give us negative values. To solve this we can use the abs function to make it positive.
+    - ![](Images/vertical_edge.png)
 - Horizontal edge detection
   - Filter would be like this
 
