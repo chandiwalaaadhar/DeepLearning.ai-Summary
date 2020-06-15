@@ -210,6 +210,7 @@ Here is the course summary as given on the course [link](https://www.coursera.or
   - In the last result p=0, s=1
   - Hint number of parameters here are: `(3x3x3x10) + 10 = 280`
 - The last example forms a layer in the CNN.
+- ![](Images/conv_notation.png)
 - Hint: no matter the size of the input, the number of the parameters is same if filter size is same. That makes it less prone to overfitting.
 - Here are some notations we will use. If layer l is a conv layer:
 
@@ -256,6 +257,7 @@ Here is the course summary as given on the course [link](https://www.coursera.or
       - `n3 = 7`, `nc3 = 40`
   - Forth layer (Fully connected Softmax)
     - `a3 = 7x7x40 = 1960`  as a vector..
+- ![](Images/deep-convnet.png)
 - In the last example you seen that the image are getting smaller after each layer and thats the trend now.
 - Types of layer in a convolutional network:
   - Convolution. 		`#Conv`
@@ -276,6 +278,7 @@ Here is the course summary as given on the course [link](https://www.coursera.or
   - Output: `2x2x10`
 - Average pooling is taking the averages of the values instead of taking the max values.
 - Max pooling is used more often than average pooling in practice.
+- Average pooling is used as an exception in very deep neural networks.
 - If stride of pooling equals the size, it will then apply the effect of shrinking.
 - Hyperparameters summary
   - f : filter size.
